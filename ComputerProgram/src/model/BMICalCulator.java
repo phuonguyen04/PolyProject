@@ -38,19 +38,19 @@ public class BMICalCulator extends Calculator {
     
     public String setStatus(){
         if (rs> 40){
-            status = "very fat";
+            status = "Very fat - should lose weight immediately";
         }
         if (rs<= 40 && rs > 30){
-            status = "fat";
+            status = "Fat - should lose weight";
         }
         if (rs<= 30 && rs > 25){
-            status = "overweight";
+            status = "Overweight";
         }
         if (rs<= 25 && rs >= 19){
-            status = "standard";
+            status = "Standard";
         }
         if (rs < 19){
-            status = "under standard";
+            status = "Under-standard";
         
         }
         return status;
